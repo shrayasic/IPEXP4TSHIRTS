@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized T-Shirt Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="image.png" alt="T-Shirt Banner" class="hero-img">
+        <div class="hero-text">
+            <h1>Order Your Custom T-Shirt Now!</h1>
+            <p>Design your own t-shirt with our easy-to-use order form.</p>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order">
+        <h1>Order Your Customized T-Shirt</h1>
+        <form id="order-form">
+            <fieldset>
+                <legend>Custom T-Shirt Order</legend>
+
+                <!-- Tagline -->
+                <label for="tagline">Tagline on the Shirt:</label>
+                <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline here" required><br><br>
+
+                <!-- Color -->
+                <label for="color">Color:</label>
+                <select id="color" name="color" required>
+                    <option value="" disabled selected>Select a color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                </select><br><br>
+
+                <!-- Size -->
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x-large">X-Large</option>
+                </select><br><br>
+
+                <!-- Material -->
+                <label for="material">Material:</label>
+                <select id="material" name="material" required>
+                    <option value="" disabled selected>Select material</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="polyester">Polyester</option>
+                    <option value="blend">Cotton-Polyester Blend</option>
+                </select><br><br>
+
+                <!-- Quantity -->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+                <!-- Delivery Date -->
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required><br><br>
+
+                <!-- Upload Design -->
+                <label for="design">Upload Your Design (Optional):</label>
+                <input type="file" id="design" name="design" accept=".jpg,.jpeg,.png,.pdf"><br><br>
+
+                <!-- Delivery Details -->
+                <fieldset>
+                    <legend>Delivery Details</legend>
+
+                    <label for="recipient-name">Recipient's Name:</label>
+                    <input type="text" id="recipient-name" name="recipient-name" placeholder="Full name" required><br><br>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Street address" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="\d{10}" required><br><br>
+                </fieldset>
+
+                <!-- Additional Comments -->
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any additional comments or special instructions"></textarea><br><br>
+
+                <!-- Display Price -->
+                <p id="price-display">Price: Rs.<span id="price">0.00</span></p>
+
+                <!-- Submit and Reset Buttons -->
+                <button type="submit">Submit Order</button>
+                <button type="reset">Reset Form</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Grievance Section in Footer -->
+    <footer>
+        <section id="grievance">
+            <h2>Grievances</h2>
+            <p>If you have any complaints or issues with your order, please contact us at <a href="mailto:grievance@example.com">grievance@example.com</a> or call us at 123-456-7890.</p>
+        </section>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
